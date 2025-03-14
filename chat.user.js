@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name         Grok Chat API
+// @name         grok-free-api
 // @namespace    http://tampermonkey.net/
 // @version      0.2
-// @description  Interface with Grok chat through a local server
+// @description  Interface with grok-free-api through a local server
 // @author       You
-// @match        https://grok.com/*
+// @match        https://grok-free-api.xyz/*
 // @grant        GM_xmlhttpRequest
 // ==/UserScript==
 
@@ -30,7 +30,7 @@
                 data: data ? JSON.stringify(data) : null,
                 headers: {
                     'Content-Type': 'application/json',
-                    'Origin': 'https://grok.com',
+                    'Origin': 'https://grok-free-api.xyz',
                     'Accept': 'application/json'
                 },
                 anonymous: true,
@@ -155,7 +155,7 @@
     }
 
     window.addEventListener('load', () => {
-        console.log('Grok Chat API userscript loaded');
+        console.log('grok-free-api userscript loaded');
         startMessageListener();
     });
 })();

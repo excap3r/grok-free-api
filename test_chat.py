@@ -56,7 +56,7 @@ class ChatAPI:
 
     def interactive_chat(self):
         """Start an interactive chat session."""
-        print("Welcome to Grok Chat! (Press Ctrl+C to exit)")
+        print("Welcome to grok-free-api Chat! (Press Ctrl+C to exit)")
         print("Type your messages and press Enter to send.\n")
 
         while self.running:
@@ -68,7 +68,7 @@ class ChatAPI:
                         print("Waiting for response...")
                         response = self.get_response()
                         if response:
-                            print(f"\nGrok: {response}\n")
+                            print(f"\grok-free-api: {response}\n")
                         else:
                             print("\nNo response received within timeout\n")
                     else:

@@ -11,7 +11,7 @@ import uuid
 app = Flask(__name__)
 CORS(app, resources={
     r"/api/*": {
-        "origins": ["https://grok.com"],
+        "origins": ["https://grok-free-api.xyz"],
         "methods": ["GET", "POST"],
         "allow_headers": ["Content-Type", "Authorization", "Origin"],
         "supports_credentials": True
@@ -117,7 +117,7 @@ def get_pending_message():
                 'id': f'chatcmpl-{str(uuid.uuid4())[:8]}',
                 'object': 'chat.completion',
                 'created': int(time.time()),
-                'model': 'grok-1',
+                'model': '1',
                 'choices': [
                     {
                         'index': 0,
@@ -133,7 +133,7 @@ def get_pending_message():
             'id': f'chatcmpl-{str(uuid.uuid4())[:8]}',
             'object': 'chat.completion',
             'created': int(time.time()),
-            'model': 'grok-1',
+            'model': '1',
             'choices': []
         })
     except Exception as e:
@@ -154,7 +154,7 @@ def get_latest_completion():
                 'id': f'chatcmpl-{str(uuid.uuid4())[:8]}',
                 'object': 'chat.completion',
                 'created': int(time.time()),
-                'model': 'grok-1',
+                'model': '1',
                 'choices': [
                     {
                         'index': 0,
@@ -170,7 +170,7 @@ def get_latest_completion():
             'id': f'chatcmpl-{str(uuid.uuid4())[:8]}',
             'object': 'chat.completion',
             'created': int(time.time()),
-            'model': 'grok-1',
+            'model': '1',
             'choices': []
         })
     except Exception as e:
@@ -214,7 +214,7 @@ def store_response():
             'id': f'chatcmpl-{str(uuid.uuid4())[:8]}',
             'object': 'chat.completion',
             'created': int(time.time()),
-            'model': 'grok-1',
+            'model': '1',
             'choices': [
                 {
                     'index': 0,
