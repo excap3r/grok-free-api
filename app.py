@@ -9,7 +9,14 @@ import time
 import uuid
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={
+    r"/api/*": {
+        "origins": ["https://grok.com"],
+        "methods": ["GET", "POST"],
+        "allow_headers": ["Content-Type", "Authorization", "Origin"],
+        "supports_credentials": True
+    }
+})
 
 # Message queue and response storage
 message_queue = Queue()

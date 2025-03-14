@@ -29,8 +29,11 @@
                 url: `${API_BASE}${endpoint}`,
                 data: data ? JSON.stringify(data) : null,
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
+                    'Origin': 'https://grok.com',
+                    'Accept': 'application/json'
                 },
+                anonymous: true,
                 onload: function(response) {
                     try {
                         const result = JSON.parse(response.responseText);
