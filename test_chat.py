@@ -187,10 +187,8 @@ class ChatAPI:
                 if message.startswith('/'):
                     self._process_command(message[1:])
                     continue
-                    
-                # Display the user message in a different color
-                print(f"{Fore.BLUE}You:{Style.RESET_ALL} {message}")
                 
+                # Skip the echo since the input line already shows what the user typed
                 # Send regular message
                 print(f"{Fore.YELLOW}Sending message...{Style.RESET_ALL}")
                 if self.send_message(message):
