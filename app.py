@@ -214,13 +214,13 @@ def list_models():
                 'id': '2',
                 'object': 'model',
                 'created': int(time.time()) - 10000,
-                'owned_by': 'grok.example.com'
+                'owned_by': 'grok-example'
             },
             {
                 'id': '3',
                 'object': 'model',
                 'created': int(time.time()) - 5000,
-                'owned_by': 'grok.example.com'
+                'owned_by': 'grok-example'
             }
         ]
     })
@@ -398,11 +398,11 @@ def health_check():
     return jsonify({
         'status': 'ok',
         'version': '1.0.0',
-        'message': 'grok.example.com server is running'
+        'message': 'server is running'
     })
 
 if __name__ == '__main__':
-    print("Starting grok.example.com server on http://localhost:5001")
+    print("Starting server on http://localhost:5001")
     print("OpenAI-compatible endpoints available at:")
     print("  - http://localhost:5001/v1/models")
     print("  - http://localhost:5001/v1/chat/completions")
