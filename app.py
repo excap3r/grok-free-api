@@ -211,16 +211,16 @@ def list_models():
         'object': 'list',
         'data': [
             {
-                'id': 'gpt-3.5-turbo',
+                'id': '2',
                 'object': 'model',
                 'created': int(time.time()) - 10000,
-                'owned_by': 'grok-free-api'
+                'owned_by': 'grok.example.com'
             },
             {
-                'id': 'gpt-4o',
+                'id': '3',
                 'object': 'model',
                 'created': int(time.time()) - 5000,
-                'owned_by': 'grok-free-api'
+                'owned_by': 'grok.example.com'
             }
         ]
     })
@@ -398,11 +398,11 @@ def health_check():
     return jsonify({
         'status': 'ok',
         'version': '1.0.0',
-        'message': 'grok-free-api server is running'
+        'message': 'grok.example.com server is running'
     })
 
 if __name__ == '__main__':
-    print("Starting grok-free-api server on http://localhost:5001")
+    print("Starting grok.example.com server on http://localhost:5001")
     print("OpenAI-compatible endpoints available at:")
     print("  - http://localhost:5001/v1/models")
     print("  - http://localhost:5001/v1/chat/completions")

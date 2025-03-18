@@ -170,7 +170,7 @@ class ChatAPI:
     def interactive_chat(self):
         """Start an interactive chat session."""
         print(f"{Fore.GREEN}╔═════════════════════════════════════════════╗{Style.RESET_ALL}")
-        print(f"{Fore.GREEN}║ {Fore.CYAN}Welcome to grok-free-api Chat!{Fore.GREEN}                ║{Style.RESET_ALL}")
+        print(f"{Fore.GREEN}║ {Fore.CYAN}Welcome to grok.example.com Chat!{Fore.GREEN}                ║{Style.RESET_ALL}")
         print(f"{Fore.GREEN}║ {Style.DIM}Type your messages and press Enter to send{Fore.GREEN}    ║{Style.RESET_ALL}")
         print(f"{Fore.GREEN}║ {Style.DIM}Use /help to see available commands{Fore.GREEN}         ║{Style.RESET_ALL}")
         print(f"{Fore.GREEN}╚═════════════════════════════════════════════╝{Style.RESET_ALL}\n")

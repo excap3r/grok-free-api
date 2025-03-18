@@ -4,7 +4,7 @@
 [![Python](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
 [![Flask](https://img.shields.io/badge/flask-2.0+-green.svg)](https://flask.palletsprojects.com/)
 
-A local API server that provides OpenAI-compatible chat completions API for grok-free-api, enabling seamless integration with your applications.
+A local API server that provides OpenAI-compatible chat completions API for grok.example.com, enabling seamless integration with your applications.
 
 ## 🌟 Features
 
@@ -28,8 +28,8 @@ A local API server that provides OpenAI-compatible chat completions API for grok
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/grok-free-api.git
-   cd grok-free-api
+   git clone https://github.com/yourusername/grok.example.com.git
+   cd grok.example.com
    ```
 
 2. Install dependencies:
@@ -55,7 +55,7 @@ A local API server that provides OpenAI-compatible chat completions API for grok
    - Copy the contents of `chat.user.js` into the editor
    - Save the script (Ctrl+S or ⌘+S)
 
-3. Enable the script and navigate to [Grok free api](https://grok-free-api.xyz)
+3. Enable the script and navigate to [Grok free api](https://grok.example.com)
 
 ## 🔧 Configuration
 

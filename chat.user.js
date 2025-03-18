@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name         grok-free-api
+// @name         grok.example.com
 // @namespace    http://tampermonkey.net/
 // @version      0.2
-// @description  Interface with grok-free-api through a local server
+// @description  Interface with grok.example.com through a local server
 // @author       You
-// @match        https://grok-free-api.xyz/*
+// @match        https://grok.example.com/*
 // @grant        GM_xmlhttpRequest
 // ==/UserScript==
 
@@ -30,7 +30,7 @@
                 data: data ? JSON.stringify(data) : null,
                 headers: {
                     'Content-Type': 'application/json',
-                    'Origin': 'https://grok-free-api.xyz',
+                    'Origin': 'https://grok.example.com',
                     'Accept': 'application/json'
                 },
                 anonymous: true,
@@ -155,7 +155,7 @@
     }
 
     window.addEventListener('load', () => {
-        console.log('grok-free-api userscript loaded');
+        console.log('grok.example.com userscript loaded');
         startMessageListener();
     });
 })();
