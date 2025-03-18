@@ -27,8 +27,8 @@ A local API server that provides OpenAI-compatible chat completions API for your
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/grok-api.git
-   cd grok-api
+   git clone [https://github.com/yourusername/grok-api.git](https://github.com/excap3r/grok-free-api.git)
+   cd grok-free-api
    ```
 
 2. Install dependencies:
